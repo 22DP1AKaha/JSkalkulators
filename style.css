@@ -63,3 +63,7 @@ button {
     background: red;
     color: #fff;
 }
+.btn-history{
+    background: rgb(224, 224, 224);
+    color: #000;
+}
