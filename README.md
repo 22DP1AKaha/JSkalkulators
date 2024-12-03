@@ -1,5 +1,5 @@
 # JSkalkulators
 
 ## Autori:
-> Rinalds Lazdiņš
-> Aleksis Kahanovskis    
+Rinalds Lazdiņš
+Aleksis Kahanovskis    
