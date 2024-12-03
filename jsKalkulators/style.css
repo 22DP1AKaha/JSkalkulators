@@ -1,0 +1,55 @@
+.calculator {
+    position: absolute; /* Make it draggable */
+    top: 200px; /* Initial vertical position */
+    left: 600px; /* Initial horizontal position */
+    width: 300px; /* Calculator width */
+    height: 400px; /* Calculator height */
+    border: 2px solid #333; /* Add border */
+    background-color: #f0f0f0; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+}
+
+
+.display {
+    height: 50px;
+    background-color: #222;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.history {
+    margin-top: 20px;
+    font-size: 14px;
+}
+@media (max-width: 500px) {
+    .calculator {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.btn:hover {
+    background-color: #666;
+    cursor: pointer;
+}
+.btn:active {
+    background-color: #333;
+}
