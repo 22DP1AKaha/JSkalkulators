@@ -24,21 +24,19 @@
             <button class="btn" onclick="addToDisplay('*')">*</button>
             <button class="btn" onclick="addToDisplay('0')">0</button>
             <button class="btn" onclick="addToDisplay('/')">/</button>
-            <button class="btn" onclick="addToDisplay('AC')">AC</button>
-            <button class="btn" onclick="addToDisplay('=')">=</button>
+            <button class="btn" onclick="clearDisplay()">AC</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn history-btn" onclick="toggleHistory()">HISTORY</button>
         </div>
 
-        <!-- History Button (same width as all other buttons combined) -->
-        <button class="btn history-btn" onclick="toggleHistory()">📜 History</button>
-        
-        <!-- Hidden History Section (Modal) -->
-        <div id="history" class="history hidden">
+        <div id="history" class="history">
             <div class="history-content">
                 <h2>Calculation History</h2>
                 <div id="history-items">
-                    <!-- History Items Will Appear Here -->
+                    
                 </div>
-                <button class="btn close-history" onclick="toggleHistory()">Close</button>
+                <button onclick="clearAllHistory()">Clear All History</button>
+                <button onclick="toggleHistory()">Close</button>
             </div>
         </div>
     </div>
