@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator with History</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="calculator" class="calculator">
         <div id="display" class="display"></div>
         <div class="buttons">
-            <!-- Calculator buttons -->
             <button class="btn" onclick="addToDisplay('1')">1</button>
             <button class="btn" onclick="addToDisplay('2')">2</button>
             <button class="btn" onclick="addToDisplay('3')">3</button>
@@ -28,7 +27,22 @@
             <button class="btn" onclick="addToDisplay('AC')">AC</button>
             <button class="btn" onclick="addToDisplay('=')">=</button>
         </div>
+
+        <!-- History Button (same width as all other buttons combined) -->
+        <button class="btn history-btn" onclick="toggleHistory()">📜 History</button>
+        
+        <!-- Hidden History Section (Modal) -->
+        <div id="history" class="history hidden">
+            <div class="history-content">
+                <h2>Calculation History</h2>
+                <div id="history-items">
+                    <!-- History Items Will Appear Here -->
+                </div>
+                <button class="btn close-history" onclick="toggleHistory()">Close</button>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
