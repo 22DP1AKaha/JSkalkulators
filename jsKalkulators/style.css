@@ -29,12 +29,15 @@ body {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 52px);
     gap: 10px;
 }
 
 .btn {
     font-size: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: black;
     color: green;
@@ -59,7 +62,7 @@ body {
 
 
 .history-btn {
-    grid-column: span 4; 
+    grid-column: span 1; 
     font-size: 24px;
     background-color: black;
     color: green;

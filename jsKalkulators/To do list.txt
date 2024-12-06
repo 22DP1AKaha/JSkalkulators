@@ -1,0 +1,9 @@
+To do list:
+	> Buttons have 5 columns, to fit the new ones
+	> Scientific buttons
+	> Fix history look
+	> button to turn off the gif and switch to normal background
+	> Add the ability to type numbers and expressions with keys
+	> Max borders for history window, buttons must be on top of the window and visible all the time
+	> When another operator is clicked switch to the new one
+	> Can press closed brackets, if open isn't added
